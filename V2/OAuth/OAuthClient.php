@@ -72,7 +72,7 @@ class OAuthClient {
         // Important. if the CURLOPT_RETURNTRANSFER  option is set, curl_exec it will return the result on success, FALSE on failure.
         curl_setopt( $this->connection, CURLOPT_RETURNTRANSFER, true );
         // The CURLOPT_HEADER option sets whether or not the server response header should be returned
-        curl_setopt( $this->connection, CURLINFO_HEADER, false );
+        curl_setopt( $this->connection, CURLOPT_HEADER, false );
         // track request information. it allows the user to retrieve the request sent
         // by cURL to the server. This is very handy and necessary when trying to analyze the full content
         // of the client to server communication. You use
